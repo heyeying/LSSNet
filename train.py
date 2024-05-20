@@ -174,15 +174,15 @@ if __name__ == '__main__':
                         default=50, help='every n epochs decay learning rate')
 
     parser.add_argument('--train_path', type=str,
-                        default='/home/ww/shy/datasets/polyp/TrainDataset/',
+                        default='../datasets/polyp/TrainDataset/',
                         help='path to train dataset')
 
     parser.add_argument('--test_path', type=str,
-                        default='/home/ww/shy/datasets/polyp/TestDataset/',
+                        default='../datasets/polyp/TestDataset/',
                         help='path to testing Kvasir dataset')
 
     parser.add_argument('--train_save', type=str,
-                        default='./model_pth/segmodel/')
+                        default='../model_pth/segmodel/')
     parser.add_argument('--log_path', type=str, default='./log/')
 
     opt = parser.parse_args()
